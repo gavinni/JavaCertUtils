@@ -22,10 +22,6 @@ keytool -list -v -keystore /path/to/keystore -storetype JCEKS
 
 
 ## Testing Java SSL connectivity
-Download SSLPoke (http://confluence.atlassian.com/display/JIRA/Connecting+to+SSL+services):
-wget http://confluence.atlassian.com/download/attachments/117455/SSLPoke.class
-
-## Then run it:
 java SSLPoke host port
 
 ## To point it to a custom keystore:
