@@ -27,12 +27,6 @@ java SSLPoke host port
 ## To point it to a custom keystore:
 java -Djavax.net.ssl.trustStore=/my/custom/keystore SSLPoke host port
 
-## Or create a wrapper script:
-sudo sh -c 'wget http://confluence.atlassian.com/download/attachments/117455/SSLPoke.class -O /usr/local/bin/SSLPoke.class'
-sudo sh -c 'echo "#!/bin/sh
-java -classpath /usr/local/bin SSLPoke \"\$@\"" > /usr/local/bin/sslpoke'
-sudo chmod +x /usr/local/bin/sslpoke
-
 ## Errors:
 java.security.InvalidAlgorithmParameterException: the trustAnchors parameter must be non-empty
 If you're using -Djavax.net.ssl.trustStore, make sure the keystore you're pointing to exists
